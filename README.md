@@ -6,7 +6,6 @@ A sophisticated e-commerce recommendation engine built with Flask and MongoDB, f
 
 - [Overview](#overview)
 - [System Architecture](#system-architecture)
-- [Data Model](#data-model)
 - [Derived Metrics](#derived-metrics)
 - [Recommendation Algorithms](#recommendation-algorithms)
 - [API Documentation](#api-documentation)
@@ -56,115 +55,6 @@ graph TB
     N --> E
 ```
 
-## 📊 Data Model
-
-### User Schema
-```mermaid
-erDiagram
-    USER {
-        ObjectId _id
-        string userName
-        string userEmail
-        string userPhone
-        string userGender
-        string userLocation
-        int userAge
-        string userOccupation
-        string userIncome
-        array userInterests
-        object userPreferences
-        object userEvents
-        object userStats
-    }
-    
-    USER_EVENTS {
-        object storeClicks
-        object productClicks
-        array purchases
-        array wishlist
-        array searchHistory
-    }
-    
-    USER_PREFERENCES {
-        array preferredCategories
-        array preferredBrands
-        string budgetRange
-        string shoppingFrequency
-    }
-    
-    USER ||--|| USER_EVENTS : has
-    USER ||--|| USER_PREFERENCES : has
-```
-
-### Store Schema
-```mermaid
-erDiagram
-    STORE {
-        ObjectId _id
-        string storeName
-        string storeTagline
-        string storeOfficialUrl
-        string storeImageUrl
-        string category
-        string subcategory
-        string location
-        float rating
-        int totalReviews
-        int foundedYear
-        string description
-        array specialties
-        array brands
-        array services
-        object socialMedia
-        object contactInfo
-        int clickCount
-        int viewCount
-        int followerCount
-        int productCount
-        float trendingScore
-        float engagementScore
-        float popularityIndex
-        float qualityScore
-    }
-    
-    STORE ||--o{ PRODUCT : contains
-```
-
-### Product Schema
-```mermaid
-erDiagram
-    PRODUCT {
-        ObjectId _id
-        string productName
-        string productImageUrl
-        string productDescription
-        int productCost
-        string productUrl
-        ObjectId productStoreId
-        string category
-        string subcategory
-        string brand
-        float rating
-        int totalReviews
-        boolean inStock
-        int discountPercentage
-        int originalPrice
-        array tags
-        array features
-        object specifications
-        int clickCount
-        int viewCount
-        int purchaseCount
-        int wishlistCount
-        float trendingScore
-        float engagementScore
-        float popularityIndex
-        float qualityScore
-    }
-    
-    PRODUCT }o--|| STORE : belongs_to
-```
-
 ## 📈 Derived Metrics
 
 ### 1. Trending Score Algorithm
@@ -183,7 +73,7 @@ flowchart TD
     C --> H[Conversion = purchases/clicks]
     D --> I[Wishlist = wishlist/views]
     E --> J[Rating = rating/5.0]
-    F --> K[Review = min(reviews/1000, 1.0)]
+    F --> K[Review = min reviews/1000, 1.0]
     
     G --> L[Weight: 25%]
     H --> M[Weight: 30%]
