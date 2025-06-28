@@ -1,0 +1,31 @@
+{
+  "storeName": "Sports Arena",
+  "storeTagline": "Gear up for greatness",
+  "storeOfficialUrl": "https://sportsarena.com",
+  "storeImageUrl": "https://svkm-bill.s3.ap-south-1.amazonaws.com/nexora/1749238324998-lev…",
+  "category": "sports",
+  "subcategory": "fitness",
+  "location": "Mumbai, Maharashtra",
+  "rating": 4.5,
+  "totalReviews": 890,
+  "foundedYear": 2018,
+  "description": "Premium sports equipment and fitness gear for athletes and fitness enthusiasts",
+  "specialties": ["fitness equipment", "sports gear", "athletic wear"],
+  "brands": ["Nike", "Adidas", "Under Armour", "Puma"],
+  "services": ["online_store", "physical_store", "custom_fitting"],
+  "socialMedia": {
+    "instagram": "@sportsarena",
+    "facebook": "SportsArenaOfficial",
+    "twitter": "@sportsarena"
+  },
+  "contactInfo": {
+    "phone": "+91-98765-43210",
+    "email": "info@sportsarena.com",
+    "address": "123 Sports Street, Mumbai, Maharashtra"
+  },
+  "clickCount": 5600,
+  "viewCount": 23400,
+  "followerCount": 12500,
+  "productCount": 450,
+  "trendingScore": 0.78
+} 

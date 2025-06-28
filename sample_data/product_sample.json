@@ -1,0 +1,29 @@
+{
+  "productName": "QuantumSync Pro Wireless Headphones",
+  "productImageUrl": "https://svkm-bill.s3.ap-south-1.amazonaws.com/nexora/1749238324998-lev…",
+  "productDescription": "Premium quality wireless headphones with noise cancellation",
+  "productCost": 2999,
+  "productUrl": "https://techhub.com/headphones",
+  "productStoreId": "685f14cfb8085767ca2b9251",
+  "category": "electronics",
+  "subcategory": "audio",
+  "brand": "QuantumSync",
+  "rating": 4.6,
+  "totalReviews": 1247,
+  "inStock": true,
+  "discountPercentage": 25,
+  "originalPrice": 3999,
+  "tags": ["wireless", "bluetooth", "noise_cancellation", "premium", "audio"],
+  "features": ["Active Noise Cancellation", "40-hour battery life", "Bluetooth 5.2", "Touch controls"],
+  "specifications": {
+    "weight": "250g",
+    "batteryLife": "40 hours",
+    "connectivity": "Bluetooth 5.2",
+    "warranty": "2 years"
+  },
+  "clickCount": 3200,
+  "viewCount": 15600,
+  "purchaseCount": 1250,
+  "wishlistCount": 450,
+  "trendingScore": 0.85
+} 
